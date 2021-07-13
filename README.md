@@ -10,3 +10,6 @@
 
 ### Ссылка на файл с проделанной работой команды для каждого этапа:
 https://docs.google.com/spreadsheets/d/11nxP32hUI85URFGp3TgRXj4zk0uaFsL30ISCkDRDMno/edit?usp=sharing 
+
+### Ссылка на библиотеку, используемую для визуализации графа
+https://github.com/jgraph/jgraphx
