@@ -1,6 +1,4 @@
 import org.junit.Test;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import static org.junit.Assert.*;
@@ -22,10 +20,11 @@ public class EnterDataTest{
                 "6 3 5\n" +
                 "0 2 3\n" +
                 "1 2 5";
-        EnterData data = new EnterData(data_);
+        EnterData data = new EnterData();
+        data.readDataFromText(data_);
         Scanner scanner = new Scanner(data_);
-        Integer VertexNum = new Integer(scanner.nextInt());//new Integer(8);
-        Integer EdgesNum = new Integer(scanner.nextInt());
+        Integer VertexNum = scanner.nextInt();//new Integer(8);
+        Integer EdgesNum = scanner.nextInt();
         assertEquals(data.getVertexNum(), VertexNum);
         assertEquals(data.getEdgesNum(), EdgesNum);
     }
@@ -37,10 +36,11 @@ public class EnterDataTest{
                 "1 1 2\n" +
                 "2 1 3\n" +
                 "3 1 4";
-        EnterData data = new EnterData(data_);
+        EnterData data = new EnterData();
+        data.readDataFromText(data_);
         Scanner scanner = new Scanner(data_);
-        Integer VertexNum = new Integer(scanner.nextInt());//new Integer(8);
-        Integer EdgesNum = new Integer(scanner.nextInt());
+        Integer VertexNum = scanner.nextInt();
+        Integer EdgesNum = scanner.nextInt();
         assertEquals(data.getVertexNum(), VertexNum);
         assertEquals(data.getEdgesNum(), EdgesNum);
         //assertEquals(1, 1);
